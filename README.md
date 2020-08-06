@@ -42,19 +42,18 @@ To use this you should write some code like this:
 * contentFileZoneContent renders content iside area - there are two variants. If document is uploaded - render (something), else - render (somthing else).
 We almost finished. Let's see on UploadArea's props:
 
-    
-    <UploadFileArea
-        classModify="form-upload"
-        classModifyActive="form-upload_active"
-        classModifyError="form-upload-error"
-        contentFileZoneContent={contentFileZoneContent}
-        setDocument={document.setValue}
-        document={document.value}
-        passFormats={["text/plain", "application/pdf", "application/msword"]}
-        error={documentError.error}
-        setError={documentError.setError}
-        errorContent={errorContent}
-      />
+        <UploadFileArea
+            classModify="form-upload"
+            classModifyActive="form-upload_active"
+            classModifyError="form-upload-error"
+            contentFileZoneContent={contentFileZoneContent}
+            setDocument={document.setValue}
+            document={document.value}
+            passFormats={["text/plain", "application/pdf", "application/msword"]}
+            error={documentError.error}
+            setError={documentError.setError}
+            errorContent={errorContent}
+          />
  
  1. classModify — class of area wrapper
  2. classModifyActive — class of area wrapper when file is uploaded
