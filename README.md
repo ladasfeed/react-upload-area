@@ -15,7 +15,7 @@ Structure:
 It was much simplifyed for you, casue i want you only to understand structure for style customize. Here is area, error wrapper inside, function for 
 rendering content (depends on isFileLoaded), and disabled input (it neccesary only for opening folder system on click).
 
-To use this you should write some code like this: 
+To use this you should write some code in your form component (or you can create component wrapper, it is not so comfortable, but it very customizible): 
 
     import UploadFileArea, { useDocumentFiled } from './Drag&Drop'
     ...
@@ -39,7 +39,8 @@ To use this you should write some code like this:
     
 * useDocumentFiled returns array with two objects - [{document, setDocument},{documentError, setDocumentError}]. We will use it as props for UploadArea component.
 * errorContent renders content when we have error
-* contentFileZoneContent renders content iside area - there are two variants. If document is uploaded - render (something), else - render (somthing else).
+* contentFileZoneContent renders content iside area - there are two variants. If document is uploaded - render (something), else - render (somthing else). Its 
+better to off pointer-event on each element inside contentFileZoneContent.
 We almost finished. Let's see on UploadArea's props:
 
         <UploadFileArea
