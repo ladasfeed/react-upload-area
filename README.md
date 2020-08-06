@@ -37,11 +37,12 @@ To use this you should write some code like this:
         }
     }
     
-1. useDocumentFiled returns array with two objects - [{document, setDocument},{documentError, setDocumentError}]. We will use it as props for UploadArea component.
-2. errorContent renders content when we have error
-3. contentFileZoneContent renders content iside area - there are two variants. If document is uploaded - render (something), else - render (somthing else).
+* useDocumentFiled returns array with two objects - [{document, setDocument},{documentError, setDocumentError}]. We will use it as props for UploadArea component.
+* errorContent renders content when we have error
+* contentFileZoneContent renders content iside area - there are two variants. If document is uploaded - render (something), else - render (somthing else).
 We almost finished. Let's see on UploadArea's props:
 
+    
     <UploadFileArea
         classModify="form-upload"
         classModifyActive="form-upload_active"
@@ -54,7 +55,7 @@ We almost finished. Let's see on UploadArea's props:
         setError={documentError.setError}
         errorContent={errorContent}
       />
-      
+ 
  1. classModify — class of area wrapper
  2. classModifyActive — class of area wrapper when file is uploaded
  3. classModifyError — class of error wrapper
