@@ -66,3 +66,4 @@ We almost finished. Let's see on UploadArea's props:
  8. setError - dont touch
  9. errorContent - your custom function which returns ReactNode
  
+ ## Use index.tsx inside Drag&DropContainer as container-template for every area in your application!
