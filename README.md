@@ -55,9 +55,9 @@ We almost finished. Let's see on UploadArea's props:
             errorContent={errorContent}
           />
  
- 1. classModify — class of area wrapper
- 2. classModifyActive — class of area wrapper when file is uploaded
- 3. classModifyError — class of error wrapper
+ 1. classModify — class of area wrapper, !unnecessary
+ 2. classModifyActive — class of area wrapper when file is uploaded, !unnecessary
+ 3. classModifyError — class of error wrapper, !unnecessary
  4. contentFileZoneContent - your custom function which returns ReactNode
  5. setDocument - dont touch
  6. passFormats - array of MIME
